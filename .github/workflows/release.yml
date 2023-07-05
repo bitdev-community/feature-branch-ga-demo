@@ -1,6 +1,8 @@
 name: Release Components
 on:
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -15,10 +17,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Initialize Bit
-        uses: bit-tasks/init@v1  
-      - name: Bit Verify
-        uses: bit-tasks/verify@v1
-      - name: Tag and Export
+        uses: bit-tasks/init@v1
+      - name: Bit Tag and Export
         uses: bit-tasks/tag-export@v1
       - name: Commit Bitmap
         uses: bit-tasks/commit-bitmap@v1

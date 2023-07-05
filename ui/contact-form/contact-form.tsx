@@ -37,7 +37,7 @@ export function ContactForm({ onSubmit: onFormSubmit }: ContactFormProps) {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        gap: '16px'
+        gap: '15px'
       }}>
         <TextField
           id="name"

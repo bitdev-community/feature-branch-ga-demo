@@ -1,0 +1,83 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "feature-branch-ga-demo",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory to place a component during `bit import` and `bit create`.
+     * the following placeholders are available:
+     * name - component name includes namespace, e.g. 'ui/button'.
+     * scopeId - full scope-id includes the owner, e.g. 'teambit.compilation'.
+     * scope - scope name only, e.g. 'compilation'.
+     * owner - owner name in bit.dev, e.g. 'teambit'.
+     **/
+    "defaultDirectory": "{name}",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "learnbit.feature-branch-ga-demo",
+    "resolveEnvsFromRoots": true
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@showoff/contact-me.ui.artwork": "0.0.39",
+        "@showoff/contact-me.ui.contact-form": "0.0.35",
+        "@showoff/design.brand.logo": "0.0.48",
+        "@showoff/design.inputs.button": "0.0.38",
+        "@showoff/design.inputs.text-field": "0.0.47",
+        "@showoff/design.layouts.margin": "0.0.24",
+        "@showoff/design.navigation.breadcrumb": "0.0.39",
+        "@showoff/design.navigation.link-text": "0.0.47",
+        "@showoff/design.theme.light-theme": "0.0.30",
+        "@showoff/design.theme.theme-provider": "0.0.33",
+        "@showoff/design.typography.typography": "0.0.36",
+        "@showoff/dev.envs.react-with-mui": "0.0.32",
+        "@showoff/dev.preview-contexts.mui-preview-context": "0.0.2",
+        "@showoff/personal-portfolio.layouts.main": "0.0.52",
+        "@showoff/personal-portfolio.ui.social.icons": "0.0.16",
+        "@teambit/defender.eslint-linter": "0.0.11",
+        "@teambit/defender.jest-tester": "0.0.12",
+        "@teambit/defender.prettier-formatter": "0.0.6",
+        "@teambit/dependencies.modules.packages-excluder": "0.0.70",
+        "@teambit/docs.docs-template": "0.0.9",
+        "@teambit/envs.docs.env-overview-template": "0.0.2",
+        "@teambit/mdx.ui.mdx-scope-context": "0.0.496",
+        "@teambit/node.node": "0.1.9",
+        "@teambit/preview.react-preview": "0.0.34",
+        "@teambit/react.mounter": "0.0.8",
+        "@teambit/react.react-env": "0.1.8",
+        "@teambit/typescript.typescript-compiler": "1.0.0",
+        "aws-lambda": "^1.0.7",
+        "eslint": "^7.28.0"
+      },
+      "peerDependencies": {}
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
+  },
+  "teambit.generator/generator": {
+    "envs": [
+      "learnbit.feature-branch-ga-demo/envs/my-react-env"
+    ]
+  }
+}

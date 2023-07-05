@@ -1,0 +1,24 @@
+---
+description: An SVG that renders the artwork necessary for the contact screen
+labels: ['SVG Artwork']
+---
+
+import { ThemeProvider } from '@showoff/design.theme.theme-provider';
+
+A component that renders the contact artwork based on theme.
+
+### Component usage
+
+Use with `ThemeProvider` to use the correct colors.
+
+```js
+<Artwork />
+```
+
+### Render hello world!
+
+```js live
+<ThemeProvider theme={lightTheme()}>
+  <Artwork />
+</ThemeProvider>
+```

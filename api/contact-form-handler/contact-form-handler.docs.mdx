@@ -1,0 +1,26 @@
+---
+description: A very basic AWS Lambda
+labels: ['serverless', 'aws', 'lambda', 'demo', 'deployer', 'app']
+---
+
+An AWS Lambda function that handles the contact form submission requests.
+
+```js
+const handleFormSubmit = async (event) => {
+  const { name } = event;
+  const response = await fetch("/api/form-handler", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name }),
+});
+```
+
+Response:
+
+```json
+{
+  "message": `Thank you ${name} for contacting me. I will get back to you shortly!`
+}
+```

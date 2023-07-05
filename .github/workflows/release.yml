@@ -21,7 +21,7 @@ jobs:
       - name: Tag and Export
         uses: bit-tasks/tag-export@v1
       - name: Commit Bitmap
-        uses: bit-tasks/commit-bitmap@main
+        uses: bit-tasks/commit-bitmap@v1
         with:
             git-user-name: 'ashanfernando'
             git-user-email: 'ashan256@gmail.com'

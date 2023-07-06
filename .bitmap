@@ -33,12 +33,6 @@
         "mainFile": "index.ts",
         "rootDir": "pages/contact-page"
     },
-    "ui/artwork": {
-        "scope": "learnbit.feature-branch-ga-demo",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "ui/artwork"
-    },
     "ui/contact-form": {
         "scope": "learnbit.feature-branch-ga-demo",
         "version": "0.0.1",

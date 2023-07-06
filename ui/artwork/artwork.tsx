@@ -10,7 +10,6 @@ export function Artwork() {
 
   return (
     <svg width="398" height="399" viewBox="0 0 398 399" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="21.0795" cy="274.808" r="0.880795" fill="#2544E5" />
       <circle cx="33.4106" cy="274.808" r="0.880795" fill="#2544E5" />
       <circle cx="45.7416" cy="274.808" r="0.880795" fill="#2544E5" />
       <circle cx="58.0727" cy="274.808" r="0.880795" fill="#2544E5" />

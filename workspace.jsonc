@@ -77,7 +77,7 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "learnbit.feature-branch-ga-demo/envs/my-react-env"
+      "learnbit.feature-branch-ga-demo/envs/react-env"
     ]
   }
 }

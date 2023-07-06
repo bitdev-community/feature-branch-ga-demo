@@ -7,6 +7,7 @@ import { Typography } from "@showoff/design.typography.typography";
 import { ContactForm } from "@showoff/contact-me.ui.contact-form";
 import { Artwork } from "@showoff/contact-me.ui.artwork";
 import { Box, Grid, GridProps, Alert } from "@mui/material";
+import { Message } from "@learnbit/feature-branch-ga-demo.ui.message";
 
 export type ContactPageProps = {
   socialLinks: {
@@ -97,6 +98,7 @@ export function ContactPage({ email, socialLinks, ...rest }: ContactPageProps) {
           }}
         >
           <Artwork />
+          <Message>We welcome your ideas!</Message>
         </Box>
       </Grid>
     </Grid>

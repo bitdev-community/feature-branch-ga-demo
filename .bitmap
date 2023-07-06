@@ -45,5 +45,17 @@
         "mainFile": "index.ts",
         "rootDir": "ui/contact-form"
     },
+    "ui/message": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "ui/message",
+        "config": {
+            "learnbit.feature-branch-ga-demo/envs/react-env": {},
+            "teambit.envs/envs": {
+                "env": "learnbit.feature-branch-ga-demo/envs/react-env"
+            }
+        }
+    },
     "$schema-version": "15.0.0"
 }

@@ -18,7 +18,7 @@ steps:
   inputs:
     script: |
       npx @teambit/bvm install
-      echo bit -v
+      echo $(bit -v)
 # - task: bit-init@0
 #   inputs:
 #     wsdir: './'

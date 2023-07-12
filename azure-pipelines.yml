@@ -8,7 +8,11 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+  environment:
+    variables:
+      BIT_TOKEN: 'dummy_token'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: bit-init@0
+  inputs:
+    wsdir: './'

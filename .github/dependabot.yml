@@ -1,5 +1,3 @@
-# dependabot.yml file with version updates
-
 version: 2
 registries:
   bit-components:
@@ -8,7 +6,7 @@ registries:
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    registries:
-      - bit-components
     schedule:
       interval: "daily"
+    registries:
+      - bit-components

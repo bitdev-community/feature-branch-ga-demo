@@ -1,8 +1,9 @@
 version: 2
 registries:
-  npm-npmjs:
+  bit-components:
     type: npm-registry
     url: "https://registry.npmjs.org"
+    token: ${{secrets.BIT_TOKEN}
 updates:
   - package-ecosystem: "npm"
     directory: "/"

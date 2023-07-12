@@ -2,7 +2,7 @@ version: 2
 registries:
   bit-components:
     type: npm-registry
-    url: "https://registry.npmjs.org"
+    url: https://registry.npmjs.org
     username: ${{secrets.USERNAME}
     password: ${{secrets.USERNAME}
 updates:

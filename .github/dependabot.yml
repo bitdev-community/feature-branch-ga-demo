@@ -2,11 +2,13 @@
 
 version: 2
 registries:
-  bit-registry:
+  bit-components:
     type: npm-registry
     url: https://node-registry.bit.cloud
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    registries:
+      - bit-components
     schedule:
       interval: "daily"

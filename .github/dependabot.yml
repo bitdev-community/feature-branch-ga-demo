@@ -3,7 +3,8 @@ registries:
   bit-components:
     type: npm-registry
     url: "https://registry.npmjs.org"
-    token: ${{secrets.BIT_TOKEN}
+    username: ${{secrets.USERNAME}
+    password: ${{secrets.USERNAME}
 updates:
   - package-ecosystem: "npm"
     directory: "/"

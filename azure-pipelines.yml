@@ -31,7 +31,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      bvm instlal bit
+      bvm install bit
       bit -v
   displayName: 'Use Bit Command'
 

@@ -4,7 +4,7 @@ version: 2
 registries:
   bit-registry:
     type: npm-registry
-    url: "https://node-registry.bit.cloud"
+    url: https://node-registry.bit.cloud
 updates:
   - package-ecosystem: "npm"
     directory: "/"

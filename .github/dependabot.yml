@@ -8,7 +8,5 @@ registries:
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    registries:
-      - bit-components
     schedule:
       interval: "daily"

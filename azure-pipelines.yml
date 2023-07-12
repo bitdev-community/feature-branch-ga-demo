@@ -14,6 +14,11 @@ variables:
   BIT_TOKEN: 'dummy_token'
 
 steps:
-- task: bit-init@0
+- task: CmdLine@2
   inputs:
-    wsdir: './'
+    script: |
+      npx @teambit/bvm install
+      echo bit -v
+# - task: bit-init@0
+#   inputs:
+#     wsdir: './'

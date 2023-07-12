@@ -2,8 +2,9 @@
 
 version: 2
 registries:
-  type: npm-registry
-  url: "https://node-registry.bit.cloud"
+  bit-registry:
+    type: npm-registry
+    url: "https://node-registry.bit.cloud"
 updates:
   - package-ecosystem: "npm"
     directory: "/"

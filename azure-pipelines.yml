@@ -8,9 +8,10 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  environment:
-    variables:
-      BIT_TOKEN: 'dummy_token'
+
+
+variables:
+  BIT_TOKEN: 'dummy_token'
 
 steps:
 - task: bit-init@0

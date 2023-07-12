@@ -9,7 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-
 variables:
   BIT_TOKEN: 'dummy_token'
 
@@ -18,7 +17,16 @@ steps:
   inputs:
     script: |
       npx @teambit/bvm install
-      echo $(bit -v)
+      echo '##vso[task.setvariable variable=BIT_PATH;]$(npx @teambit/bvm path)'
+  displayName: 'Install Bit and Set Bit Path'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      export PATH=$(BIT_PATH):$PATH
+      bit -v
+  displayName: 'Use Bit Command'
+
 # - task: bit-init@0
 #   inputs:
 #     wsdir: './'

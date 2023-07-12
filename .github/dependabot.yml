@@ -11,3 +11,4 @@ updates:
       - bit-components
     schedule:
       interval: "daily"
+    versioning-strategy: lockfile-only

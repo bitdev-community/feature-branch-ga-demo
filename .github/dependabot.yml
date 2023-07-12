@@ -2,7 +2,7 @@ version: 2
 registries:
   npm-npmjs:
     type: npm-registry
-    url: https://registry.npmjs.org
+    url: "https://registry.npmjs.org"
 updates:
   - package-ecosystem: "npm"
     directory: "/"

@@ -13,15 +13,20 @@ variables:
   BIT_TOKEN: 'dummy_token'
 
 steps:
-- task: CmdLine@2
+- task: bit-init@0
   inputs:
-    script: |
-      export SHELL=bash
-      echo $(Pipeline.Workspace)
-#echo $(/home/vsts/bin/bit -v)
-#npx @teambit/bvm install
+    wsdir: './'
 
-  displayName: 'Get Bit binary path'
+
+# - task: CmdLine@2
+#   inputs:
+#     script: |
+#       export SHELL=bash
+#       echo $(Pipeline.Workspace)
+# #echo $(/home/vsts/bin/bit -v)
+# #npx @teambit/bvm install
+
+#   displayName: 'Get Bit binary path'
 # - task: CmdLine@2
 #   inputs:
 #     script: |

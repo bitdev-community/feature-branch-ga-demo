@@ -16,7 +16,11 @@ steps:
 - task: bit-init@0
   inputs:
     wsdir: './'
-
+- task: CmdLine@2
+  inputs:
+    script: |
+      bit -v
+  displayName: 'Use BIT Command'
 
 # - task: CmdLine@2
 #   inputs:

@@ -19,8 +19,8 @@ steps:
       export SHELL=bash
       npx @teambit/bvm install
       bvm install bit
-      ls $(npm config get prefix)/bin
-      echo $(npm config get prefix)/bin
+      ls /opt/hostedtoolcache
+      echo /opt/hostedtoolcache/bin
       export PATH=$(npm config get prefix)/bin:$PATH
 
       bit -v

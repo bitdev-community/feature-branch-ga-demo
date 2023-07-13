@@ -16,6 +16,7 @@ steps:
 - task: bit-init@0
   inputs:
     wsdir: './'
+- task: bit-verify@0
 - task: CmdLine@2
   inputs:
     script: |

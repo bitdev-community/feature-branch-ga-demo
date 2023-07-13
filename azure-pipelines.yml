@@ -17,7 +17,8 @@ steps:
   inputs:
     script: |
       export SHELL=bash
-      npx @teambit/bvm install --verbose
+      npx @teambit/bvm install
+      echo $( npx @teambit/bvm install path)
       echo $(/home/vsts/bin/bit -v)
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2

@@ -18,7 +18,7 @@ steps:
     script: |
       export SHELL=bash
       npx @teambit/bvm install
-      npx @teambit/bvm path
+      export PATH=$(npx @teambit/bvm path):$PATH
       bit -v
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2

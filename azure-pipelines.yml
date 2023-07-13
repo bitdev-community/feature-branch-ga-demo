@@ -35,16 +35,8 @@ steps:
   inputs:
     script: |
       export PATH=$(BIT_PATH):$PATH
-      bvm -v
-  displayName: 'Use BVM Command'
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      export PATH=$(BIT_PATH):$PATH
-      bvm install bit
       bit -v
-  displayName: 'Use Bit Command'
+  displayName: 'Use BIT Command'
 
 
 # - task: bit-init@0

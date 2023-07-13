@@ -26,8 +26,7 @@ steps:
   inputs:
     script: |
       export SHELL=bash
-      npm i -g @teambit/bvm
-      bvm install
+      npx @teambit/bvm install
       echo '##vso[task.setvariable variable=BIT_PATH;]$(npx @teambit/bvm path)'
   displayName: 'Install Bit and Set Bit Path'
 

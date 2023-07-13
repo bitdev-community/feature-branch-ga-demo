@@ -17,9 +17,10 @@ steps:
   inputs:
     script: |
       export SHELL=bash
-      npx @teambit/bvm install
-      echo $( npx @teambit/bvm install path)
-      echo $(/home/vsts/bin/bit -v)
+      echo ${Agent.BuildDirectory}
+#echo $(/home/vsts/bin/bit -v)
+#npx @teambit/bvm install
+
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2
 #   inputs:

@@ -17,7 +17,7 @@ steps:
   inputs:
     script: |
       export SHELL=bash
-      echo ${Agent.BuildDirectory}
+      echo $(Agent.BuildDirectory)
 #echo $(/home/vsts/bin/bit -v)
 #npx @teambit/bvm install
 

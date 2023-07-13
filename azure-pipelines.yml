@@ -18,8 +18,6 @@ steps:
     script: |
       export SHELL=bash
       npx @teambit/bvm install
-      ls $(npm config get prefix)/bin
-      echo "Before"
       bvm install bit
       ls $(npm config get prefix)/bin
       echo $(npm config get prefix)/bin

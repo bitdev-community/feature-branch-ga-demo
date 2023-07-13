@@ -19,6 +19,7 @@ steps:
       export SHELL=bash
       npx @teambit/bvm install
       npx @teambit/bvm path
+      bit -v
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2
 #   inputs:

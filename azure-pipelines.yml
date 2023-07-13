@@ -19,7 +19,6 @@ steps:
       export SHELL=bash
       npx @teambit/bvm install --verbose
       find / -name bit -type f
-      ls /usr/bin
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2
 #   inputs:

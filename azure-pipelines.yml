@@ -16,8 +16,14 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
+      npm config get prefix
+  displayName: 'Get NPM Global Installation Path'
+- task: CmdLine@2
+  inputs:
+    script: |
       export SHELL=bash
-      npx @teambit/bvm install
+      npm i -g @teambit/bvm
+      bvm install
       echo '##vso[task.setvariable variable=BIT_PATH;]$(npx @teambit/bvm path)'
   displayName: 'Install Bit and Set Bit Path'
 

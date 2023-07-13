@@ -20,7 +20,7 @@ steps:
       npx @teambit/bvm install
       npx @teambit/bvm path
   displayName: 'Get Bit binary path'
-- task: CmdLine@2
+# - task: CmdLine@2
 #   inputs:
 #     script: |
 #       export SHELL=bash

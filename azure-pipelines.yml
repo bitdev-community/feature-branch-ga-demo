@@ -18,6 +18,7 @@ steps:
     script: |
       export SHELL=bash
       npx @teambit/bvm install
+      bvm install bit
       ls $(npm config get prefix)
       echo $(npm config get prefix)/bin
       export PATH=$(npm config get prefix)/bin:$PATH

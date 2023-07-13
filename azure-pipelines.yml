@@ -13,6 +13,10 @@ variables:
   BIT_TOKEN: 'dummy_token'
 
 steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'
+  displayName: 'Install Node.js'
 - task: CmdLine@2
   inputs:
     script: |

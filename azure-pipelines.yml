@@ -18,12 +18,8 @@ steps:
     script: |
       export SHELL=bash
       npx @teambit/bvm install
-      bvm install bit
+      bvm install bit --verbose
       ls /opt/hostedtoolcache
-      echo /opt/hostedtoolcache/bin
-      export PATH=$(npm config get prefix)/bin:$PATH
-
-      bit -v
   displayName: 'Get Bit binary path'
 # - task: CmdLine@2
 #   inputs:

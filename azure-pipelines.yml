@@ -21,19 +21,19 @@ steps:
       npx @teambit/bvm path
   displayName: 'Get Bit binary path'
 - task: CmdLine@2
-  inputs:
-    script: |
-      export SHELL=bash
-      npx @teambit/bvm install
-      task.setvariable variable=BIT_PATH;]$(npx @teambit/bvm path)
-  displayName: 'Install Bit and Set Bit Path'
+#   inputs:
+#     script: |
+#       export SHELL=bash
+#       npx @teambit/bvm install
+#       task.setvariable variable=BIT_PATH;]$(npx @teambit/bvm path)
+#   displayName: 'Install Bit and Set Bit Path'
 
-- task: CmdLine@2
-  inputs:
-    script: |
-      export PATH=$(BIT_PATH):$PATH
-      bit -v
-  displayName: 'Use BIT Command'
+# - task: CmdLine@2
+#   inputs:
+#     script: |
+#       export PATH=$(BIT_PATH):$PATH
+#       bit -v
+#   displayName: 'Use BIT Command'
 
 
 # - task: bit-init@0

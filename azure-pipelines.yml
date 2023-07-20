@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  BIT_TOKEN: 'dummy_token'
+  BIT_CONFIG_USER_TOKEN: 'dummy_token'
 
 steps:
 - task: bit-init@0

@@ -1,13 +1,14 @@
 name: Release Components
 on:
-  push:    
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 permissions:
   contents: write
 jobs:
   release:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}

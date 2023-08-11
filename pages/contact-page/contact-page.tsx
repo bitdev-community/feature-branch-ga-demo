@@ -60,7 +60,7 @@ export function ContactPage({ email, socialLinks, ...rest }: ContactPageProps) {
             <LinkText
               linkText="Go to my homepage"
               url="/"
-              fontSize={16}
+              fontSize={15}
               fontWeight={400}
               iconSize="medium"
               color="secondary"

@@ -1,14 +1,10 @@
 version: 2
-registries:
-  bit-components:
-    type: npm-registry
-    url: https://node-registry.bit.cloud
-    token: ${{secrets.BIT_TOKEN}}
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    registries:
-      - bit-components
     schedule:
       interval: "daily"
-    versioning-strategy: lockfile-only
+    groups:
+      showoff-scope-dependencies:
+         patterns:
+           - "@learnbit*"

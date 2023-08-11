@@ -11,7 +11,9 @@ jobs:
     if: github.event.pull_request.merged == true
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      BIT_TOKEN: ${{ secrets.BIT_CONFIG_USER_TOKEN }}
+      GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+      BIT_CONFIG_USER_TOKEN: ${{ secrets.BIT_CONFIG_USER_TOKEN }}
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -30,6 +32,4 @@ jobs:
       - name: Commit Bitmap
         uses: bit-tasks/commit-bitmap@v1
         with:
-            git-user-name: 'ashanfernando'
-            git-user-email: 'ashan256@gmail.com'
             skip-push: 'true'

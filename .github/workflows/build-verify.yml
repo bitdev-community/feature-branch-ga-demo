@@ -1,6 +1,9 @@
 name: Build and Verify
 on:
   workflow_dispatch:
+  push:    
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest

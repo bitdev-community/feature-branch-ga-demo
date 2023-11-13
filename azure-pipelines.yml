@@ -29,5 +29,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      bit login
-  displayName: 'Bit login'
+      echo $(process.env.BIT_CONFIG_USER_TOKEN)
+  displayName: 'Bit token'

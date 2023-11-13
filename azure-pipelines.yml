@@ -12,7 +12,7 @@ pool:
 variables:
   GIT_USER_NAME: "ashanfernando"
   GIT_USER_EMAIL: "ashan256@gmail.com"
-  BIT_CONFIG_USER_TOKEN: ""
+  BIT_CLOUD_ACCESS_TOKEN: ""
 
 steps:
 - task: bit-init@0

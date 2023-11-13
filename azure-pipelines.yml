@@ -4,22 +4,30 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: ubuntu-latest
 
 variables:
-  BIT_CONFIG_USER_TOKEN: 'dummy_token'
+  GIT_USER_NAME: "ashanfernando"
+  GIT_USER_EMAIL: "ashan256@gmail.com"
+  BIT_CONFIG_USER_TOKEN: "dummy_token"
 
 steps:
 - task: bit-init@0
   inputs:
     wsdir: './'
-- task: bit-verify@0
+
 - task: CmdLine@2
   inputs:
     script: |
       bit -v
       echo $(wsdir)
-  displayName: 'Use bit'
+  displayName: 'Bit version'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      bit login
+  displayName: 'Bit login'

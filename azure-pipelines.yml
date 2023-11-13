@@ -15,7 +15,7 @@ variables:
   BIT_CLOUD_ACCESS_TOKEN: ""
 
 steps:
-- task: bit-init
+- task: bit-init@0
   inputs:
     wsdir: './'
 
